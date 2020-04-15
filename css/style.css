@@ -1,23 +1,27 @@
-body{
+body {
     width: 1280px;
     margin: 0 auto;
 }
-.header{
+
+.header {
     width: 100%;
     padding: 50px;
     background-color: #445162;
     box-sizing: border-box;
 }
+
 .header:after {
     content: "";
     display: block;
     width: 100%;
     clear: both;
 }
-.header-wrp{
+
+.header-wrp {
     float: left;
 }
-.header-title{
+
+.header-title {
     margin: 0 0 0 0;
     font-family: ArialMT;
     font-size: 60px;
@@ -25,21 +29,25 @@ body{
     font-weight: 400;
     color: #ffffff;
 }
-.header-ul{
+
+.header-ul {
     padding: 0 0 0 20px;
-    height: 128px;
+    margin: 20px 0 0 0;
+    min-height: 128px;
     font-family: ArialMT;
     font-size: 20px;
     line-height: 36px;
     font-weight: 400;
     color: #ffffff;
- }
- .header-ul-item{
+}
+
+.header-ul-item {
     list-style: none;
     position: relative;
     padding: 0 0 0 15px;
- }
- .header-ul-item:before {
+}
+
+.header-ul-item:before {
     content: "";
     display: block;
     width: 25px;
@@ -50,29 +58,44 @@ body{
     position: absolute;
     top: 5px;
     left: -18px;
- }
- .header-img{
+}
+
+.header-img {
     float: right;
-    /* padding:0 50px 0 0; */
     width: 469px;
-    height: 214px;
-  }
-.main{
+    min-height: 214px;
+}
+
+.main {
     width: 100%;
+}
+
+.main-about-wrp {
+    width: 100%;
+    display: block;
     padding: 50px;
     box-sizing: border-box;
-
 }
-.main:after {
+
+.main-about-wrp::after {
     content: "";
     display: block;
+    width: 100%;
     clear: both;
 }
-.main-about-wrp{
-    float: left;
+
+.main-about-wrp {
+    width: 100%;
     display: block;
+    padding: 50px;
+    box-sizing: border-box;
 }
-.main-about-title{
+
+.about-wrp {
+    float: left;
+}
+
+.about-title {
     margin: 0 0 0 0;
     font-family: ArialMT;
     font-size: 30px;
@@ -80,9 +103,11 @@ body{
     font-weight: 400;
     color: #445161;
 }
-.main-about-p{
+
+.about-p {
+    margin: 20px 0 0 0;
     width: 649px;
-    height: 63px;
+    min-height: 63px;
     display: block;
     font-family: ArialMT;
     font-size: 16px;
@@ -90,9 +115,10 @@ body{
     font-weight: 400;
     color: #333333;
 }
-.main-about-img{
+
+.about-img {
     float: right;
     width: 430px;
-    height: 245px;
+    min-height: 245px;
     background-color: #445161;
 }
