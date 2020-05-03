@@ -203,16 +203,16 @@ body{
     font-weight: 300;
     color: #ffffff;
 }
-.slider-content-center-link{
-    text-align: center;
-}
+
 .slider-content-center-button{
+    text-decoration: none;
+    display: block;
     height: 53px;
     width: 170px;
     background-color:#998675 ;
     font-family: Raleway;
     font-size: 14px;
-    line-height: 23px;
+    line-height: 50px;
     font-weight: 800;
     text-transform: uppercase;
     color: #ffffff;
@@ -220,7 +220,7 @@ body{
     outline: none;
     border: none;
     border-radius: 5px;
-    margin: 50px 0 0 0;
+    margin: 50px 0 0 210px;
 
 }
 .slider-content-center-button:hover{
