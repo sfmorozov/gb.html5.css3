@@ -766,22 +766,157 @@ body {
   color: #4e3427;
 }
 
-.article-wrapper {
+.article-wrp {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
+  width: 70%;
+  padding: 25px 0 0 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .projects-article {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 20%;
+  width: 373px;
+  padding: 15px;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.projects-article:hover .projects-article-figcaption {
+  background-color: #362f2d;
+}
+
+.projects-article:hover .projects-article-figure {
+  background-color: #362f2d;
+}
+
+.projects-article:hover .projects-article-figcaption:before {
+  border-bottom: 15px solid #362f2d;
+}
+
+.projects-article:hover .projects-article-figcaption-span {
+  font-family: Raleway;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.projects-article:hover .projects-article-figcaption-p {
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 300;
+  color: #c7b299;
+}
+
+.projects-article:hover .projects-arcticle-figure-img {
+  -webkit-filter: brightness(45%);
+          filter: brightness(45%);
+}
+
+.projects-article:hover .projects-article-figure-link {
+  display: block;
+}
+
+.projects-article:hover .projects-article-figure-search {
+  display: block;
+}
+
+.projects-article-figure-link:hover,
+.projects-article-figure-search:hover {
+  fill: #c7b299;
+}
+
+.projects-article-figure {
+  margin: 0;
+  background-color: #fbfaf8;
+}
+
+.projects-article-figure-link,
+.projects-article-figure-search {
+  position: absolute;
+  border: none;
+  fill: #fff;
+  display: none;
+  text-decoration: none;
+}
+
+.projects-article-figure-link {
+  top: 125px;
+  left: 164px;
+}
+
+.projects-article-figure-search {
+  top: 125px;
+  left: 194px;
+}
+
+.projects-arcticle-figure-img {
+  background-color: #8c8c8c;
+}
+
+.projects-article-figcaption {
+  width: 370px;
+  height: 100px;
+  background-color: #fbfaf8;
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  padding: 30px 0 0 28px;
+}
+
+.projects-article-figcaption:before {
+  content: "";
+  display: block;
+  border: 15px solid transparent;
+  border-bottom: 15px solid #fbfaf8;
+  position: absolute;
+  top: -30px;
+  left: 19px;
+}
+
+.projects-article-figcaption-span {
+  font-family: Raleway;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 500;
+  color: #c7b299;
+  text-transform: capitalize;
+}
+
+.projects-article-figcaption-p {
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 300;
+  color: #d1d1d1;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+.projects-load-button-wrp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px 0 0 0;
 }
 
 .projects-load-button {
-  margin: 40px 0 0 0;
   width: 170px;
   height: 50px;
   background-color: #998675;
